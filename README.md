@@ -1,3 +1,3 @@
 # Sass-Pack
-<b>Sass pack</b> (in progress)<br>
+<b>Sass pack</b> <em>(in progress)</em><br>
 Some usefull mixins to build my own Sass pack...
