@@ -1,0 +1,13 @@
+// lower to higher
+
+$z-index-stacking-order: default,
+main,
+carousel,
+header,
+menu,
+overlay,
+messageBar;
+
+@mixin z-index($use-case) {
+  z-index: index($z-index-stacking-order, $use-case);
+}

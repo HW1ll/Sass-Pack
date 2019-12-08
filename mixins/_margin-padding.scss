@@ -1,0 +1,52 @@
+@mixin m-p($type, $value, $direction:all) {
+	@if $type==padding {
+		@if $direction==all {
+			padding: $value;
+		}
+
+		@else if $direction==top {
+			padding-top: $value
+		}
+
+		@else if $direction==left {
+			padding-left: $value
+		}
+
+		@else if $direction==right {
+			padding-right: $value
+		}
+
+		@else {
+			padding-bottom: $value
+		}
+	}
+
+	@else {
+		@if $direction==all {
+			margin: $value;
+		}
+
+		@else if $direction==top {
+			margin-top: $value
+		}
+
+		@else if $direction==left {
+			margin-left: $value
+		}
+
+		@else if $direction==right {
+			margin-right: $value
+		}
+
+		@else {
+			margin-bottom: $value
+		}
+	}
+}
+
+@mixin mx-auto {
+	margin: {
+		left: auto;
+		right: auto;
+	}
+}

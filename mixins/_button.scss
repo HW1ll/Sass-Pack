@@ -1,0 +1,19 @@
+.btn-link {
+  color: $color-primary;
+
+  @include hover {
+    color: $color-secondary;
+  }
+
+  &:focus,
+  &.focus {
+    box-shadow: none;
+  }
+
+  &:disabled,
+  &.disabled {
+    color: $color-white;
+    pointer-events: none;
+  }
+
+}

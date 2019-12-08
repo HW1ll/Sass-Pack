@@ -1,0 +1,5 @@
+.form-control,
+.custom-select {
+  @include rounded(2px);
+  @include border(1px, solid, #E3E4E8);
+}

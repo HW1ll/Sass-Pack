@@ -1,0 +1,14 @@
+// Theme
+
+$color-primary: rgb(78, 177, 235);
+$color-secondary: lighten(adjust-hue($color-primary, 20), 10%);
+$color-white:rgb(255, 255, 255);
+$color-black:rgb(0, 0, 0);
+
+// Fonts vars
+
+$ft-open-sans:'Open Sans',sans-serif;
+$ft-open-sans-condensed:'Open Sans Condensed',sans-serif;
+$ft-roboto-condensed:'Roboto Condensed',sans-serif;
+$ft-roboto:'Roboto',sans-serif;
+$ft-roboto-condensed:'Roboto Condensed',sans-serif;
