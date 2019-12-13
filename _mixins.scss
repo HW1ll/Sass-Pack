@@ -1,7 +1,8 @@
 // MIXINS
+@import "mixins/flexbox"; // FLEXBOX
 @import "mixins/border"; // BORDER
 @import "mixins/button"; // BUTTON
-@import "mixins/font-size"; // FONT-SIZE PX TO EM
+@import "mixins/font-size"; // FONT-SIZE PX TO REM
 @import "mixins/font-weight"; // FONT-WEIGHTS
 @import "mixins/font"; // FONT
 @import "mixins/form"; // FORM
