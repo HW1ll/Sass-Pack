@@ -1,0 +1,3 @@
+@mixin calc($property, $value) {
+  #{$property}: calc(#{$value});
+}

@@ -1,0 +1,77 @@
+@mixin caret(
+  $position,
+  $caret-size,
+  $border-width,
+  $direction,
+  $border-color,
+  $background-color
+) {
+  position: $position;
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+  }
+  @if $direction == top {
+    &:before {
+      top: 0;
+      left: 0;
+      border-bottom: $caret-size solid $border-color;
+      border-left: $caret-size solid transparent;
+      border-right: $caret-size solid transparent;
+    }
+    &:after {
+      left: $border-width;
+      top: $border-width;
+      border-bottom: ($caret-size - $border-width) solid $background-color;
+      border-left: ($caret-size - $border-width) solid transparent;
+      border-right: ($caret-size - $border-width) solid transparent;
+    }
+  } @else if $direction == right {
+    &:before {
+      top: 0;
+      left: 0;
+      border-left: $caret-size solid $border-color;
+      border-top: $caret-size solid transparent;
+      border-bottom: $caret-size solid transparent;
+    }
+    &:after {
+      left: 0;
+      top: $border-width;
+      border-left: ($caret-size - $border-width) solid $background-color;
+      border-top: ($caret-size - $border-width) solid transparent;
+      border-bottom: ($caret-size - $border-width) solid transparent;
+    }
+  } @else if $direction == bottom {
+    &:before {
+      top: 0;
+      left: 0;
+      border-top: $caret-size solid $border-color;
+      border-left: $caret-size solid transparent;
+      border-right: $caret-size solid transparent;
+    }
+    &:after {
+      left: $border-width;
+      top: 0;
+      border-top: ($caret-size - $border-width) solid $background-color;
+      border-left: ($caret-size - $border-width) solid transparent;
+      border-right: ($caret-size - $border-width) solid transparent;
+    }
+  } @else if $direction == left {
+    &:before {
+      top: 0;
+      left: 0;
+      border-right: $caret-size solid $border-color;
+      border-top: $caret-size solid transparent;
+      border-bottom: $caret-size solid transparent;
+    }
+    &:after {
+      left: $border-width;
+      top: $border-width;
+      border-right: ($caret-size - $border-width) solid $background-color;
+      border-top: ($caret-size - $border-width) solid transparent;
+      border-bottom: ($caret-size - $border-width) solid transparent;
+    }
+  }
+}

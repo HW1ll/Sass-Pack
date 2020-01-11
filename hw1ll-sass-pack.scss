@@ -1,5 +1,5 @@
 /*!
- * HW1ll Sass pack v1.0.0
+ * HW1ll Sass pack v1.0.1
  */
 
 @import "variables";
@@ -14,7 +14,8 @@ body {
   @include font-size(12px);
 }
 
-// FONTS 
+// FONTS
+
 .open-sans {
   font-family: $ft-open-sans;
 }
@@ -32,6 +33,7 @@ body {
 }
 
 // COLORS
+
 .color-primary {
   color: $color-primary;
 }
@@ -49,13 +51,17 @@ body {
 }
 
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {}
+@media (min-width: 576px) {
+}
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+}
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+}
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+}
