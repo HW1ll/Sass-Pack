@@ -1,0 +1,160 @@
+@mixin bg-color($color, $treatment: z) {
+    @if $treatment==z {
+        background-color: $color;
+    }
+
+    // LIGHTEN
+    @if $treatment==lt-10 {
+        background-color: lighten($color, 10%);
+    }
+
+    @if $treatment==lt-25 {
+        background-color: lighten($color, 25%);
+    }
+
+    @if $treatment==lt-50 {
+        background-color: lighten($color, 50%);
+    }
+
+    @if $treatment==lt-75 {
+        background-color: lighten($color, 75%);
+    }
+
+    // DARKEN
+    @if $treatment==dk-10 {
+        background-color: darken($color, 10%);
+    }
+
+    @if $treatment==dk-25 {
+        background-color: darken($color, 25%);
+    }
+
+    @if $treatment==dk-50 {
+        background-color: darken($color, 50%);
+    }
+
+    @if $treatment==dk75 {
+        background-color: darken($color, 75%);
+    }
+
+    // SATURATE
+    @if $treatment==st-10 {
+        background-color: saturate($color, 10%);
+    }
+
+    @if $treatment==st-25 {
+        background-color: saturate($color, 25%);
+    }
+
+    @if $treatment==st-50 {
+        background-color: saturate($color, 50%);
+    }
+
+    @if $treatment==st-75 {
+        background-color: saturate($color, 75%);
+    }
+
+    // DESATURATE
+    @if $treatment==dst-10 {
+        background-color: desaturate($color, 10%);
+    }
+
+    @if $treatment==dst-25 {
+        background-color: desaturate($color, 25%);
+    }
+
+    @if $treatment==dst-50 {
+        background-color: desaturate($color, 50%);
+    }
+
+    @if $treatment==dst-75 {
+        background-color: desaturate($color, 75%);
+    }
+
+    // 0 <> 1
+    // FADE-IN
+    @if $treatment==fi-10 {
+        background-color: fade-in($color, .10);
+    }
+
+    @if $treatment==fi-25 {
+        background-color: fade-in($color, .25);
+    }
+
+    @if $treatment==fi-50 {
+        background-color: fade-in($color, .50);
+    }
+
+    @if $treatment==fi-75 {
+        background-color: fade-in($color, .75);
+    }
+
+    // FADE-OUT
+    @if $treatment==fo-10 {
+        background-color: fade-out($color, .10);
+    }
+
+    @if $treatment==fo-25 {
+        background-color: fade-out($color, .25);
+    }
+
+    @if $treatment==fo-50 {
+        background-color: fade-out($color, .50);
+    }
+
+    @if $treatment==fo-75 {
+        background-color: fade-out($color, .75);
+    }
+
+    // TRANSPARENTIZE
+    @if $treatment==tz-10 {
+        background-color: transparentize($color, .10);
+    }
+
+    @if $treatment==tz-25 {
+        background-color: transparentize($color, .25);
+    }
+
+    @if $treatment==tz-50 {
+        background-color: transparentize($color, .50);
+    }
+
+    @if $treatment==tz-75 {
+        background-color: transparentize($color, .75);
+    }
+
+    // OPACIFY
+    @if $treatment==op-10 {
+        background-color: opacify($color, .10);
+    }
+
+    @if $treatment==op-25 {
+        background-color: opacify($color, .25);
+    }
+
+    @if $treatment==op-50 {
+        background-color: opacify($color, .50);
+    }
+
+    @if $treatment==op-75 {
+        background-color: opacify($color, .75);
+    }
+
+    // DEGREES
+    // ADJUST-HUE
+    @if $treatment==ah-10 {
+        background-color: adjust-hue($color, 10);
+    }
+
+    @if $treatment==ah-25 {
+        background-color: adjust-hue($color, 25);
+    }
+
+    @if $treatment==ah-50 {
+        background-color: adjust-hue($color, 50);
+    }
+
+    @if $treatment==ah-75 {
+        background-color: adjust-hue($color, 75);
+    }
+}

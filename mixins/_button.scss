@@ -1,7 +1,8 @@
 .btn-link {
   color: $color-primary;
 
-  @include hover {
+  &:hover,
+  &.hover {
     color: $color-secondary;
   }
 

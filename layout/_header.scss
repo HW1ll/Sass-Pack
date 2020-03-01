@@ -1,18 +1,5 @@
-/*!
- * HW1ll Sass starter pack v1.0.2
- */
-//  command : sass hw1ll-sass-pack.scss css/style.css --watch
-
-@import "variables";
-@import "mixins";
-@import "layout";
-
 // MOBILE FIRST START HERE
 // Extra small devices (portrait phones, less than 576px)
-
-body {
-  @include font-size(12px);
-}
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {}

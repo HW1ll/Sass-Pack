@@ -1,5 +1,6 @@
 // MIXINS
-
+@import "mixins/absolutecenter"; // ABSOLUTE CENTER WITHOUT FLEXBOX
+@import "mixins/bg-color"; // BG COLORS + TREATMENTS
 @import "mixins/border"; // BORDER
 @import "mixins/button"; // BUTTON
 @import "mixins/calc"; // CALC
@@ -13,7 +14,6 @@
 @import "mixins/opacity"; // OPACITY
 @import "mixins/placeholder"; // INPUT PLACEHOLDER
 @import "mixins/pseudo"; // BEFORE & AFTER
-@import "mixins/rounded"; // BORDER-RADIUS
 @import "mixins/shadow"; // TEXT-SHADOW & BOX-SHADOW
 @import "mixins/text"; // TEXT OPTIONS
 @import "mixins/transition"; // FX TRANSITION

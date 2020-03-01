@@ -7,8 +7,47 @@ $color-black: rgb(0, 0, 0);
 
 // FONTS
 
-$ft-open-sans: "Open Sans", sans-serif;
-$ft-open-sans-condensed: "Open Sans Condensed", sans-serif;
-$ft-roboto: "Roboto", sans-serif;
-$ft-roboto-condensed: "Roboto Condensed", sans-serif;
+$ft-open-sans: "Open Sans",
+sans-serif;
+$ft-open-sans-condensed: "Open Sans Condensed",
+sans-serif;
+$ft-roboto: "Roboto",
+sans-serif;
+$ft-roboto-condensed: "Roboto Condensed",
+sans-serif;
 
+// FONTS
+
+.open-sans {
+    font-family: $ft-open-sans;
+}
+
+.open-sans-condensed {
+    font-family: $ft-open-sans-condensed;
+}
+
+.roboto {
+    font-family: $ft-roboto;
+}
+
+.roboto-condensed {
+    font-family: $ft-roboto-condensed;
+}
+
+// COLORS
+
+.color-primary {
+    color: $color-primary;
+}
+
+.color-secondary {
+    color: $color-secondary;
+}
+
+.color-white {
+    color: $color-white;
+}
+
+.color-black {
+    color: $color-black;
+}
