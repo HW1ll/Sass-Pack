@@ -33,7 +33,7 @@
         background-color: darken($color, 50%);
     }
 
-    @if $treatment==dk75 {
+    @if $treatment==dk-75 {
         background-color: darken($color, 75%);
     }
 
